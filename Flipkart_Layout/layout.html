@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f1f3f6;
+}
+
+
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:white;
+}
+
+.logo-box,
+.travel-box{
+    width:150px;
+    height:50px;
+    background:#ffd700;
+    text-align:center;
+    line-height:50px;
+    border-radius:8px;
+}
+
+.travel-box{
+    background:#ddd;
+}
+
+.location{
+    font-size:20px;
+}
+
+
+
+.search-section{
+    display:flex;
+    justify-content:center;
+    margin:20px;
+}
+
+.search-section input{
+    width:60%;
+    padding:12px;
+}
+
+.search-section button{
+    padding:12px 20px;
+    background:green;
+    color:white;
+    border:none;
+}
+
+
+
+.categories{
+    display:flex;
+    justify-content:space-around;
+    background:white;
+    padding:20px;
+    margin:10px;
+}
+
+.cat{
+    width:90px;
+    height:90px;
+    border:1px solid lightgray;
+    text-align:center;
+    padding-top:15px;
+    border-radius:10px;
+}
+
+.cat p{
+    margin-top:10px;
+}
+
+
+
+.banner-section{
+    display:flex;
+    gap:15px;
+    margin:20px;
+}
+
+.banner{
+    flex:1;
+    height:180px;
+    background:#444;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+
+
+.product-container{
+    margin:20px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.product-container h2{
+    margin-bottom:20px;
+}
+
+.products{
+    display:flex;
+    justify-content:space-around;
+}
+
+.product{
+    width:180px;
+    height:220px;
+    border:1px solid lightgray;
+    border-radius:10px;
+    text-align:center;
+    padding:10px;
+}
+
+.img-box{
+    width:100%;
+    height:150px;
+    background:#dcdcdc;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+    </style>
+</head>
+<body>
+
+    
+    <div class="header">
+
+        <div class="logo-box">
+            <h2>Flipkart</h2>
+        </div>
+
+        <div class="travel-box">
+            Travel
+        </div>
+
+        <div class="location">
+            📍 Vadodara
+        </div>
+
+    </div>
+
+   
+    <div class="search-section">
+        <input type="text" placeholder="Search Products">
+        <button>Search</button>
+    </div>
+
+   
+    <div class="categories">
+
+        <div class="cat">
+            👜
+            <p>Bags</p>
+        </div>
+
+        <div class="cat">
+            👕
+            <p>Fashion</p>
+        </div>
+
+        <div class="cat">
+            📱
+            <p>Mobile</p>
+        </div>
+
+        <div class="cat">
+            💄
+            <p>Beauty</p>
+        </div>
+
+        <div class="cat">
+            💻
+            <p>Computers</p>
+        </div>
+
+        <div class="cat">
+            📺
+            <p>Electronics</p>
+        </div>
+
+        <div class="cat">
+            🧸
+            <p>Toys</p>
+        </div>
+
+        <div class="cat">
+            🍔
+            <p>Food</p>
+        </div>
+
+    </div>
+
+    
+    <div class="banner-section">
+
+        <div class="banner">
+            <h3>Sports Wear</h3>
+            <p>Up to 40% Off</p>
+        </div>
+
+        <div class="banner">
+            <h3>Perfumes</h3>
+            <p>Up to 50% Off</p>
+        </div>
+
+        <div class="banner">
+            <h3>Fashion Sale</h3>
+            <p>Best Deals</p>
+        </div>
+
+    </div>
+
+  
+    <div class="product-container">
+
+        <h2>Home Decor & Furnishing</h2>
+
+        <div class="products">
+
+            <div class="product">
+                <div class="img-box"></div>
+                <p>Product 1</p>
+            </div>
+
+            <div class="product">
+                <div class="img-box"></div>
+                <p>Product 2</p>
+            </div>
+
+            <div class="product">
+                <div class="img-box"></div>
+                <p>Product 3</p>
+            </div>
+
+            <div class="product">
+                <div class="img-box"></div>
+                <p>Product 4</p>
+            </div>
+
+            <div class="product">
+                <div class="img-box"></div>
+                <p>Product 5</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f7f7f7;
+    padding:30px;
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+    width:1100px;
+    display:grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-rows: 250px 200px 250px;
+    gap:20px;
+}
+
+
+.card{
+    border-radius:25px;
+    padding:25px;
+    color:#222;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.5;
+}
+
+
+
+.customization{
+    background:#dcd5ff;
+    grid-row:1 / 3;
+}
+
+.scheduling{
+    background:#f7a6ba;
+    grid-column:2 / 4;
+}
+
+.wallet{
+    background:#d8ec9f;
+}
+
+.inbox{
+    background:#f7d96b;
+}
+
+.gifts{
+    background:#ffc89f;
+    grid-column:1 / 3;
+}
+
+.reminders{
+    background:#d7f6ea;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card customization">
+        <h2>Customization</h2>
+        <p>Use a pre-designed template or personalize with stickers, fonts and more.</p>
+    </div>
+
+    <div class="card scheduling">
+        <h2>Scheduling</h2>
+        <p>Schedule your card and gift now and we'll send them later.</p>
+    </div>
+
+    <div class="card wallet">
+        <h2>Wallet</h2>
+        <p>Access all your gifts and save your Givingli Cash.</p>
+    </div>
+
+    <div class="card inbox">
+        <h2>Inbox</h2>
+        <p>Track your gifts, group chats and sent cards.</p>
+    </div>
+
+    <div class="card gifts">
+        <h2>Send Gifts</h2>
+        <p>Send as a group with friends or individually.</p>
+    </div>
+
+    <div class="card reminders">
+        <h2>Reminders</h2>
+        <p>Never miss a birthday again.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
