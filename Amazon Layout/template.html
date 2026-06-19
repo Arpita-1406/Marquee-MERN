@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+.navbar{
+    height:60px;
+    background:#131921;
+    color:white;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.logo-img{
+    font-size:30px;
+    color:#ff9900;
+    font-weight:bold;
+}
+
+.border{
+    border:1px solid transparent;
+    padding:8px;
+}
+
+.border:hover{
+    border:1px solid white;
+}
+
+.search{
+    width:600px;
+    display:flex;
+}
+
+.search select{
+    width:50px;
+}
+
+.search input{
+    width:100%;
+    padding:10px;
+}
+
+.search button{
+    width:50px;
+    background:#febd69;
+    border:none;
+}
+
+.panel{
+    height:40px;
+    background:#232f3e;
+    color:white;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding-left:20px;
+}
+
+.panel-options{
+    display:flex;
+    gap:20px;
+}
+
+.hero{
+    height:350px;
+    background:url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.shop-section{
+    background:#e2e7e6;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:20px;
+}
+
+.box{
+    background:white;
+    padding:15px;
+}
+
+.box img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    margin:10px 0;
+}
+
+.foot-panel1{
+    background:#37475a;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.foot-panel2{
+    background:#232f3e;
+    color:white;
+    display:flex;
+    justify-content:space-evenly;
+    padding:40px;
+}
+
+.foot-panel3{
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+
+            <div class="logo border">
+                <div class="logo-img">amazon</div>
+            </div>
+
+            <div class="address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div class="search">
+                <select>
+                    <option>All</option>
+                </select>
+
+                <input type="text"
+                placeholder="Search Amazon">
+
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="signin border">
+                <p><span>Hello, Sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+
+            <div class="orders border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+
+            <div class="cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+
+        </div>
+
+        <!-- Panel -->
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+
+            <div class="panel-options">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Prime</p>
+                <p>Gift Cards</p>
+                <p>Sell</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero"></section>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+
+        <div class="box">
+            <h2>Clothes</h2>
+            <img src="images/box1.jpg">
+            <a href="#">See More</a>
+        </div>
+
+        <div class="box">
+            <h2>Electronics</h2>
+            <img src="images/box2.jpg">
+            <a href="#">See More</a>
+        </div>
+
+        <div class="box">
+            <h2>Furniture</h2>
+            <img src="images/box3.jpg">
+            <a href="#">See More</a>
+        </div>
+
+        <div class="box">
+            <h2>Beauty Products</h2>
+            <img src="images/box4.jpg">
+            <a href="#">See More</a>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="foot-panel1">
+            Back to Top
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <h3>Get to Know Us</h3>
+                <li>About Amazon</li>
+                <li>Careers</li>
+                <li>Investor Relations</li>
+            </ul>
+
+            <ul>
+                <h3>Make Money with Us</h3>
+                <li>Sell Products</li>
+                <li>Affiliate Program</li>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            Amazon Clone
+        </div>
+
+    </footer>
+
+</body>
+</html>
